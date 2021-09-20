@@ -35,7 +35,7 @@ namespace TeamProjectArray
 
             int q = 1;
             int n;
-            int r, c;
+            int r;
 
             Console.WriteLine("");
             while (q == 1)
@@ -54,7 +54,7 @@ namespace TeamProjectArray
                 else
                 {
                     r = 0;
-                    c = 0;
+                    
                     for (int i = 0; i < a * a; i++)
                     {
                         if (ar[i] == 1)
@@ -100,12 +100,7 @@ namespace TeamProjectArray
                     }
                     else if (n == 6)
                     {
-                        if (r == 0)
-                        {
-                            ar[r] = 0;
-                            ar[r + 1] = 1;
-                        }
-                        else if ((r == a - 1) || ((r + 1) % a == 0))
+                         if ((r == a - 1) || ((r + 1) % a == 0))
                         {
                             ar[r] = 1;
                         }
